@@ -1,0 +1,98 @@
+<svg width="680" height="814" viewBox="0 0 680 814" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Otonom Zirai Dron Sistemi Mimarisi</title>
+<desc>Yer kontrol istasyonundan uçuş kontrolcüsüne üç farklı fiziksel yolla ulaşan tek Ethernet arayüzü, özel iletişim protokolü, ve STM32H755 üzerinde M7/M4 görev dağılımını gösteren yapısal diyagram.</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs>
+<rect width="680" height="814" fill="#FFFFFF"/>
+
+<rect x="60" y="40" width="560" height="150" rx="20" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="80" y="66" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#26215C">Yer kontrol istasyonu</text>
+<text x="80" y="84" font-family="Arial, sans-serif" font-size="12" fill="#534AB7">Android (Kotlin)</text>
+
+<rect x="90" y="100" width="230" height="70" rx="12" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text x="205" y="126" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#26215C">Rota planlama</text>
+<text x="205" y="144" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#3C3489">Boustrophedon + A*</text>
+<text x="205" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#3C3489">C++ (NDK/JNI, &lt;100 ms)</text>
+
+<rect x="360" y="100" width="230" height="70" rx="12" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text x="475" y="126" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#26215C">Görev ve izleme arayüzü</text>
+<text x="475" y="144" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#3C3489">Poligon çizimi, telemetri</text>
+<text x="475" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#3C3489">Operasyon yönetimi</text>
+
+<text x="340" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#5F5E5A">Ethernet'e üç fiziksel erişim yolu</text>
+
+<rect x="60" y="222" width="150" height="60" rx="10" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<text x="135" y="244" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#2C2C2A">Ev modemi</text>
+<text x="135" y="262" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5F5E5A">Masa üstü geliştirme</text>
+
+<rect x="225" y="222" width="230" height="60" rx="10" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<text x="340" y="244" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#2C2C2A">Skydroid G20</text>
+<text x="340" y="262" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5F5E5A">Asıl kumanda — GCS burada koşar</text>
+
+<rect x="470" y="222" width="150" height="60" rx="10" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<text x="545" y="244" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#2C2C2A">USR-WIFI232-A2</text>
+<text x="545" y="262" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5F5E5A">Geçici saha TCP</text>
+
+<line x1="135" y1="282" x2="135" y2="300" stroke="#888780" stroke-width="1.5"/>
+<line x1="340" y1="282" x2="340" y2="300" stroke="#888780" stroke-width="1.5"/>
+<line x1="545" y1="282" x2="545" y2="300" stroke="#888780" stroke-width="1.5"/>
+<line x1="135" y1="300" x2="545" y2="300" stroke="#888780" stroke-width="1.5"/>
+<line x1="340" y1="300" x2="340" y2="322" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="340" y1="322" x2="340" y2="300" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="450" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#5F5E5A">Ethernet</text>
+
+<rect x="110" y="326" width="460" height="56" rx="14" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text x="340" y="352" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#4A1B0C">Özel iletişim protokolü</text>
+<text x="340" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#712B13">Telemetri / anlık komut / kalıcı ayar / waypoint</text>
+
+<line x1="340" y1="382" x2="340" y2="414" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="340" y1="414" x2="340" y2="382" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="60" y="414" width="560" height="380" rx="20" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="80" y="440" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#04342C">Uçuş kontrolcü — STM32H755</text>
+<text x="80" y="458" font-family="Arial, sans-serif" font-size="12" fill="#0F6E56">Çift çekirdek asimetrik (AMP) mimari</text>
+
+<rect x="90" y="476" width="240" height="290" rx="12" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="210" y="502" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#042C53">M7 çekirdeği</text>
+<text x="210" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#185FA5">Azure RTOS — görev katmanı</text>
+
+<rect x="108" y="536" width="204" height="36" rx="8" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+<text x="210" y="554" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#0C447C">Haberleşme ve görev yönetimi</text>
+
+<rect x="108" y="580" width="204" height="36" rx="8" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+<text x="210" y="598" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#0C447C">GPS / RTK yönetimi</text>
+
+<rect x="108" y="624" width="204" height="36" rx="8" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+<text x="210" y="642" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#0C447C">CAN — spray / spreader (planlanan)</text>
+
+<rect x="108" y="668" width="204" height="36" rx="8" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+<text x="210" y="686" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#0C447C">Radar engel algılama (planlanan)</text>
+
+<text x="210" y="732" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#5F5E5A">Karmaşıklık ve büyüme burada</text>
+<text x="210" y="748" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#5F5E5A">izole edilir</text>
+
+<rect x="350" y="476" width="240" height="290" rx="12" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.5"/>
+<text x="470" y="502" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#173404">M4 çekirdeği</text>
+<text x="470" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#3B6D11">Bare-metal — stabilite katmanı</text>
+
+<rect x="368" y="536" width="204" height="36" rx="8" fill="#C0DD97" stroke="#3B6D11" stroke-width="0.5"/>
+<text x="470" y="554" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#27500A">AHRS sensör füzyonu</text>
+
+<rect x="368" y="580" width="204" height="36" rx="8" fill="#C0DD97" stroke="#3B6D11" stroke-width="0.5"/>
+<text x="470" y="598" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#27500A">PID kontrol döngüsü</text>
+
+<rect x="368" y="624" width="204" height="36" rx="8" fill="#C0DD97" stroke="#3B6D11" stroke-width="0.5"/>
+<text x="470" y="642" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#27500A">Failsafe mekanizması</text>
+
+<text x="470" y="684" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#5F5E5A">Tek görev: dronu</text>
+<text x="470" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#5F5E5A">stabil havada tutmak</text>
+<text x="470" y="732" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#5F5E5A">M7'deki yükten ve</text>
+<text x="470" y="748" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#5F5E5A">olası çökmeden bağımsız</text>
+
+<line x1="330" y1="554" x2="350" y2="554" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="350" y1="598" x2="330" y2="598" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="340" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#5F5E5A">Paylaşımlı</text>
+<text x="340" y="594" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#5F5E5A">bellek</text>
+
+</svg>
