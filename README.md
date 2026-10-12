@@ -2,7 +2,7 @@
 
 Tarım arazilerinde otonom ilaçlama/gözlem uçuşu için geliştirilen uçtan uca bir dron sistemi: uçuş kontrolcü, yer kontrol istasyonu ve aralarındaki özel iletişim protokolü.
 
-Sistem mimarisi, kontrol algoritmaları ve tüm teknik kararlar tek kişilik bir geliştirme süreciyle alınmıştır; geliştirme sürecinde yapay zeka destekli araçlardan yararlanılmıştır. Proje aktif geliştirme aşamasındadır; sıradaki adım PID kontrolcüsünün yazılması ve test setup'ında PID tune çalışmalarıdır.
+Sistem mimarisi, kontrol algoritmaları ve tüm teknik kararlar iki kişilik bir geliştirme süreciyle alınmıştır; geliştirme sürecinde yapay zeka destekli araçlardan yararlanılmıştır. Proje aktif geliştirme aşamasındadır; sıradaki adım PID kontrolcüsünün yazılması ve test setup'ında PID tune çalışmalarıdır.
 
 > Bu depo yalnızca proje dokümantasyonu içindir. Kaynak kod bu aşamada paylaşılmamaktadır.
 
